@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My Survey!</title>
+		<meta name="viewport" content="width=device-width, initial-scale=0.9">
+		<link rel="stylesheet" href="link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">">
+       <link href="style.css" rel="stylesheet"> 
+    </head>
+<body>
+    <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">My Survey</h1>
+      <p id="description" class="description text-center">
+        Thank you for letting me to improve myself
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">What do you want to be called</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Any kind of name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Your Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Do you like your life?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select your liking to life </option>
+          <option value="hate">Hate it</option>
+          <option value="like">Like it</option>
+          <option value="tired">I'm tired</option>
+          <option value="preferNo">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>Would you recommend running away?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="definitely"
+            type="radio"
+            class="input-radio"
+            checked
+          />Run as fast as you can</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="maybe"
+            type="radio"
+            class="input-radio"
+          />Maybe</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not"
+            type="radio"
+            class="input-radio"
+          />No, stay here and be sad</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          Why I should like myself?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Tell me</option>
+          <option value="challenges">You like to be challenged</option>
+          <option value="projects">You undertake a lot of projects</option>
+          <option value="community">You are a great friend</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What would you like to change in your life?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="learning-more"
+            type="checkbox"
+            class="input-checkbox"
+          />Learning more</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="travelling more"
+            type="checkbox"
+            class="input-checkbox"
+          />Travelling More</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Reading more"
+            type="checkbox"
+            class="input-checkbox"
+          />Reading more</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="challenges"
+            type="checkbox"
+            class="input-checkbox"
+          />More challenges</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="routine"
+            type="checkbox"
+            class="input-checkbox"
+          />Having set up routine</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="less-sm"
+            type="checkbox"
+            class="input-checkbox"
+          />Stop using social media</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="affirmations"
+            type="checkbox"
+            class="input-checkbox"
+          />Affirmations</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="city-meetups"
+            type="checkbox"
+            class="input-checkbox"
+          />Meeting new people</label
+        >
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your suggestion"
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+    </div>
+</body>
+  
